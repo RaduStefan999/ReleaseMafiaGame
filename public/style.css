@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@800&display=swap');
+.container-fluid{
+  height: 100vh;
+}
+.roleText {
+  letter-spacing: 0.5rem;
+  font-size: 2rem;
+  font-family: "Special Elite";
+  color: white;
+}
+.role {
+  color: RGB(102, 2, 0);
+  font-size: 2rem;
+  filter: brightness(250%);
+  text-transform: uppercase;
+}
+.player-nickname {
+  color: rgb(255, 217, 0);
+  font-size: 2rem;
+  filter: brightness(250%);
+}
+.fa-moon {
+  color: rgb(255, 217, 0);
+  font-size: 12rem;
+  margin-top: 7vh;
+}
+.fa-sun {
+  color: rgb(255, 217, 0);
+  font-size: 12rem;
+  margin-top: 7vh;
+}
+.fix {
+  display: flex;
+  flex-direction: row;
+
+}
+.voters{
+  min-width: 50%;
+
+}
+.targets{
+  min-width: 50%;
+}
+
+
+@media only screen and (max-width: 1400px) {
+  .role {
+    font-size: 1.5rem;
+  }
+  .roleText{
+    font-size: 1.5rem;
+  }
+  .player-nickname {
+    font-size: 1.5rem;
+  }
+  .fa-moon{
+    font-size: 10rem;
+  }
+  .fa-sun{
+    font-size: 10rem;
+  }
+}
+@media only screen and (max-width: 1060px) {
+  .role {
+    font-size: 1.2rem;
+  }
+  .roleText{
+    font-size: 1.2rem;
+  }
+  .player-nickname {
+    font-size: 1.2rem;
+  }
+}
+
+
+@media only screen and (max-width: 1100px) {
+.targets li{
+  font-size: 1.2rem;
+}
+.voters li {
+  font-size: 1.2rem;
+}
+}
+
+.main {
+  background-image: url("https://cdn.wallpapersafari.com/87/97/nOthRF.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+#nick {
+  color: white;
+  background-color: transparent;
+  font-size: xx-large;
+  border: none;
+  outline: none;
+  transition: all .5s;
+}
+#nick:hover{
+  filter: brightness(70%);
+}
+.align {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.players {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+}
+.player {
+  font-size: 1.6rem;
+  color: white;
+  margin: 0.4rem;
+  display: flex;
+  justify-content: space-between;
+}
+.playerVoter {
+  width: 100%;
+  font-size: 1.6rem;
+  color: white;
+  margin: 0.4rem;
+  text-align: start;
+}
+.voteBtn {
+  margin: 0 .5rem;
+  border-radius: 50%;
+  color: white;
+  font-size: 2.5rem;
+  outline: none;
+  background-color: rgb(31, 30, 30);
+  padding: .5rem;
+  transition: all 1s;
+}
+.voteBtn:hover{
+  background-color: rgba(165, 159, 159, 0.623);
+  cursor: pointer;
+  outline: none;
+}
+
+.middle {
+	display: flex;
+	text-align: center;
+	flex-direction: column;
+}
+.umplutura {
+  flex: 1;
+}
+.riseAnimation {
+  flex: 0.2;
+  animation: moveAnim 1.5s alternate 1;
+}
+@keyframes moveAnim {
+  from { flex: 1 }
+  to{ flex: 0.2 }
+}
+.title {
+  letter-spacing: 0.8rem;
+  font-size: 5rem;
+  font-family: "Special Elite", cursive;
+  color: RGB(102, 2, 0);
+  filter: brightness(225%);
+  font-weight: bold;
+}
+#roleText {
+  font-size: 1.5rem;
+  font-family: "Special Elite", cursive;
+  color: RGB(102, 2, 0);
+  filter: brightness(200%);
+  margin-bottom: 15px;
+}
+@keyframes anime {
+  from {
+    margin: 10rem 0 0 0;
+  }
+  to {
+    margin: 0;
+  }
+}
+.animation {
+  animation-name: anime;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+@keyframes show {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+.disapear {
+  animation-name: show;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+.playersCard {
+  background: rgba(215, 211, 226, 0.2);
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 80vh;
+  margin: 4.5rem 2rem 0 2rem;
+  border-radius: 1%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.playersCard::-webkit-scrollbar {
+  width: 0.5rem;
+}
+.playersCard::-webkit-scrollbar-track {
+  background: grey;
+}
+.playersCard::-webkit-scrollbar-thumb {
+  background: rgb(26, 26, 26);
+}
+.votersCard{
+  background: rgba(215, 211, 226, 0.2);
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 80vh;
+  margin: 4.5rem 2rem 0rem 0;
+  border-radius: 1%;
+  overflow-y: auto ;
+  overflow-x: hidden;
+}
+.votersCard::-webkit-scrollbar {
+  width: 0.5rem;
+}
+.votersCard::-webkit-scrollbar-track {
+  background: grey;
+}
+.votersCard::-webkit-scrollbar-thumb {
+  background: rgb(26, 26, 26);
+}
+.playersTitle {
+  font-size: 2.2rem;
+  color: rgb(236, 224, 46);
+  padding: 0.3rem;
+  padding-bottom: 0;
+  margin: 0 auto;
+  font-weight: inherit;
+}
+.votesCard {
+  background: rgba(215, 211, 226, 0.2);
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 80vh;
+  margin: 3rem 0 0 0;
+  border-radius: 1%;
+  position: relative;
+}
+.votesTitles {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.input {
+outline: none;
+color: white;
+background-color: black ;
+border: none;
+border-bottom: 1px solid white;
+width: 90%;
+font-size: 1.2rem;
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.inputContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  
+}
+*{
+  box-sizing: border-box;
+  padding: 0;
+ 
+}
+.timer-container {
+  margin: 2rem auto;
+  text-align: center;
+  margin-top: 0;
+}
+.timer-container ul {
+  padding: 0;
+}
+#countdown li {
+  margin: .3rem;
+  border: 3px solid  rgb(39, 38, 38);
+  display: inline-block;
+  font-size: 1.5em;
+  list-style-type: none;
+  padding: 1rem;
+  padding-top: 0;
+  color: rgb(236, 201, 46);
+  width: 7rem;
+  height: 5.5rem;
+  background-image: linear-gradient(to bottom right, rgb(20, 19, 19), rgb(58, 58, 56));
+  border-radius: 1rem;
+  font-family: 'Inconsolata', monospace;
+
+}
+#minutes {
+  display: block;
+  font-size: 3.5rem;
+  color: rgb(236, 201, 46);
+}
+#seconds {
+  display: block;
+  font-size: 3.5rem;
+  color: rgb(236, 201, 46);
+}
+.t{
+  font-size: 1.25rem;
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+.voters_table {
+  display: flex;
+  justify-content: space-between;
+}
+
+.playerVoteBtn_clicked {
+  background-color: rgba(117, 114, 114, 0.623);
+  outline: none;
+}
+
+#serverMessages
+{
+  height: 200px;
+  overflow-y: auto;
+}
